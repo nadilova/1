@@ -1,13 +1,12 @@
-.header1 {
+/* .header1 {
 position: absolute;
-font-size: 14px;
 width: 1200px;
 height: 150px;
 top: 30px;
 left: 40px;
 left: calc(50% - 1200px/2);
 top: calc(50% - 150px/2 - 1793px);
-}
+} */
 .paragraph-1{
 position: absolute;
 width: 460px;
@@ -32,17 +31,47 @@ top: 16px;
 }
 #start-screen-puppy {
 position: absolute;
+margin-top: 300px;
+padding-top: 305;
 width: 698px;
 height: 728px;
 left: calc(50% - 698px/2 + 251px);
 bottom: 0px;
+background: url(image.png);
 }
-/* background: url(image.png); */
+.top {grid-area: top;}
+.start {grid-area: start;}
+.about {grid-area: about;}
+.pets {grid-area: pets;}
+.help {grid-area: help;}
+.donation {grid-area: donation;}
+.footer {grid-area: footer;};
 
-.wrapper {
-    display: grid;
-    grid-template-rows: 928px 588px 877px 611px 462px 350px;
+.grid-container {
+   display: grid;
+   grid-template-areas: 
+   'top'
+   'start'
+   'about'
+   'pets'
+   'help'
+   'donation'
+   'footer';
 }
+.grid-container > section .top{
+    
+    background-color: #000000;
+    text-align: left;
+    /* grid-template-rows: 928px 588px 877px 611px 462px 350px;  */
+    /* overflow: visible; */
+}
+.start {
+    background: #FFFFFF;
+    margin-top: 150px;
+    padding-top: 160px;
+    box-sizing: border-box
+}
+
 .heading2 {
 position: absolute;
 width: 310px;
@@ -56,5 +85,5 @@ font-size: 44px;
 line-height: 130%;
 display: flex;
 align-items: center;
-color: #000000; //#FFFFFF
+ color: #000000;    /*#FFFFFF */
 }
