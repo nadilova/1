@@ -7,6 +7,13 @@ left: 40px;
 left: calc(50% - 1200px/2);
 top: calc(50% - 150px/2 - 1793px);
 } */
+.title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35.2px;
+    color: #F1CDB3;
+}
 .paragraph-1{
 position: absolute;
 width: 460px;
@@ -58,7 +65,7 @@ background: url(image.png);
    'donation'
    'footer';
 }
-.grid-container > section .top{
+.grid-container > div {
     
     background-color: #000000;
     text-align: left;
@@ -85,5 +92,5 @@ font-size: 44px;
 line-height: 130%;
 display: flex;
 align-items: center;
- color: #000000;    /*#FFFFFF */
+ color: #FFFFFF;   
 }
